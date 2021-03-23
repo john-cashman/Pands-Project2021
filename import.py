@@ -3,5 +3,7 @@ import pandas as pd
 
 data = pd.read_csv("iris_csv.csv") 
 
-data.head()
-print(data)
+# print(data.head(11))
+# print(data.sample(20))
+# print(data.columns)
+print(data.shape)
