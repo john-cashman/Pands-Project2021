@@ -12,7 +12,10 @@ sns.set()
 # loads the Iris dataset from sklearns datasets. Important to include the "()" afterwards. 
 data = datasets.load_iris()
 
-print(data)
+# describes the data
+# print(data["DESCR"])
 
+# print(data)
+print(data["feature_names"])
 print('still works')
 
