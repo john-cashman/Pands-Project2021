@@ -1,13 +1,23 @@
 # import the tools needed to analyse and plot the data. 
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
 import seaborn as sns
-from sklearn import datasets
-print('done')
 
+from sklearn import datasets
+data = datasets.load_iris()
+
+
+
+
+
+
+
+
+'''
 # This updates the plotting styles within the program to follow the seaborn style. Not needed,just the seaborn style looks better.
-sns.set()
+# sns.set()
 
 # loads the Iris dataset from sklearns datasets. Important to include the "()" afterwards. 
 data = datasets.load_iris()
@@ -23,3 +33,4 @@ df["target"] = data["target"]
 print(data["feature_names"])
 print('still works')
 
+'''
