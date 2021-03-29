@@ -27,6 +27,7 @@ plt.savefig('ImageFolder/SepalLengthHist.png')   #This saves the image to my ima
 # plt.show()
 
 
+
 # Sepal Width
 col = "sepal width (cm)"
 df[col].hist( color = "Red")  
@@ -36,6 +37,10 @@ plt.ylabel("count")
 plt.savefig('ImageFolder/SepalWidthHist.png')   
 # plt.show()
 
+
+
+
+
 # Petal Length
 col = "petal length (cm)"
 df[col].hist( color = "Yellow")  
@@ -44,6 +49,7 @@ plt.xlabel("Petal Length in cm")
 plt.ylabel("count")
 plt.savefig('ImageFolder/PetalLengthHist.png')   
 # plt.show()
+
 
 
 # Petal Width
