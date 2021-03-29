@@ -11,15 +11,24 @@ sepal is the stem
 petal is the main portion of the flower
 
 ## Importing the Libraries
-For this project I am using Pandas, Numpy, Matplotlib and Seaborn. 
+For this project I am using Pandas, Numpy, Matplotlib and Seaborn. I installed all the libraries into my machines through pip before starting the project. After importing I print done just so I know that it has worked.
 
-![imp](ImagesForReadMe/libs.png)
-
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt 
+import seaborn as sns
+print('done')
+```
 
 ## Importing the Dataset
 To import the dataset I first installed sklearn through the terminal using pip. Then I imported the iris dataset from sklearn's datasets library.
 
-![imp](ImagesForReadMe/irisimp.png)
+```
+from sklearn import datasets
+data = datasets.load_iris()
+print("done")
+```
 
 
 ## Getting Familiar With The Data
@@ -52,3 +61,4 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 ![imp](ImageFolder/PetalWidthHist.png)
 ![imp](ImageFolder/SepalWidthHist.png)
 
+From looking at the histogram we can see that the setosa 
