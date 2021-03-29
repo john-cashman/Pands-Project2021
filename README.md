@@ -47,8 +47,8 @@ plt.ylabel("count")
 plt.savefig('ImageFolder/SepalLengthHist.png') 
 ```
 
-![imp](ImagesForReadMe/ImageFolder/PetalLengthHist.png)
-![imp](ImagesForReadMe/ImageFolder/SepalLengthHist.png)
-![imp](ImagesForReadMe/ImageFolder/PetalWidthHist.png)
-![imp](ImagesForReadMe/ImageFolder/SepalWidthHist.png)
+![imp](ImageFolder/PetalLengthHist.png)
+![imp](ImageFolder/SepalLengthHist.png)
+![imp](ImageFolder/PetalWidthHist.png)
+![imp](ImageFolder/SepalWidthHist.png)
 
