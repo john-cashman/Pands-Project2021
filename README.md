@@ -118,13 +118,19 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 
 ![imp](ImageFolder/PetalLengthHist.png)
 &nbsp;
+
 &nbsp;
+
 ![imp](ImageFolder/SepalLengthHist.png)
 &nbsp;
+
 &nbsp;
+
 ![imp](ImageFolder/PetalWidthHist.png)
 &nbsp;
+
 &nbsp;
+
 ![imp](ImageFolder/SepalWidthHist.png)
   
 
