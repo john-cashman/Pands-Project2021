@@ -16,7 +16,6 @@ df = pd.DataFrame(data["data"], columns=data["feature_names"])
 
 
 
-
 # first I set a variable named col and equal it to the column I want to use for the histogram. Then  I pass it into the histogram and finaly use it to make a title for the histogram. The final part I am saving the histogram as an image so it saves elsewhere in my directory.
 col = "sepal length (cm)"
 df[col].hist( color = "green")  # I could have also used Matplotlib here with plt.hist

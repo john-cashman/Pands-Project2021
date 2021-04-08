@@ -11,7 +11,7 @@ sepal is the stem
 petal is the main portion of the flower
 
 ## Importing the Libraries
-For this project I am using Pandas, Numpy, Matplotlib and Seaborn. I installed all the libraries into my machines through pip before starting the project. After importing I print done just so I know that it has worked.
+For this project I used Pandas, Numpy, Matplotlib and Seaborn. I installed all the libraries into my machines through pip before starting the project. After importing I print done just so I know that it has worked.
 
 ```
 import pandas as pd
@@ -61,4 +61,13 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 ![imp](ImageFolder/PetalWidthHist.png)
 ![imp](ImageFolder/SepalWidthHist.png)
 
-From looking at the histogram we can see that the setosa 
+
+# Assigning Names to targets
+
+![imp](ImagesForReadMe/targ.png)
+
+
+![imp](ImagesForReadMe/tar2.png)
+
+After setting target names I could get more in depth with the analysis.
+
