@@ -1,5 +1,5 @@
 # Pands-Project
- 
+ :leaves:
 The Irish Flower Data Set is a set of 150 entries of a specific flower.
 
 3 different Iris species:
@@ -104,7 +104,7 @@ From here I wanted to get to know the data further. I felt a histogram was a goo
 ## Histograms
 The histogram shows the distribution between each variable for a specific characteristic.
 
-I have saved the histograms program in the repository under Histograms.py. I also saved the plots as pngs and placed them into a separate folder within the repository.
+I have saved the histograms program in the repository under [Histograms.py](https://github.com/john-cashman/Pands-Project2021/blob/main/Histograms.py). I also saved the plots as pngs and placed them into a separate folder within the repository.
 
 ``` 
 col = "sepal length (cm)"
@@ -140,9 +140,19 @@ After setting target names I could get more in depth with the analysis.
 
 
 ```
-col = "sepal length (cm)"
+col = "sepal length (cm)" 
 sns.relplot(x=col, y ="target", hue="target_name", data=df)
 plt.title(col)
 plt.savefig('ImageFolder/relplotsepallengthplt.png')
 plt.show()
 ```
+![imp](ImageFolder/relplotsepallength.png)
+
+![imp](ImageFolder/relplotsepalwidth.png)
+
+![imp](ImageFolder/relplotpetallength.png)
+
+![imp](ImageFolder/relplotpetalwidth.png)
+
+This plot gave a much clearer view of the data. For example, the petal length and width of the Setosa species is far shorter than the other two species. The Setosa tends to have a wider sepal though but a much shorter sepal length.
+Versicolor and Virginica on the other hand are more difficult to tell apart as there is cross over in all attributes.
