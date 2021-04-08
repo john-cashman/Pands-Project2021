@@ -10,6 +10,10 @@ Iris
 sepal is the stem
 petal is the main portion of the flower
 
+
+
+
+
 ## Importing the Libraries
 For this project I used Pandas, Numpy, Matplotlib and Seaborn. I installed all the libraries into my machines through pip before starting the project. After importing I print done just so I know that it has worked.
 
@@ -21,6 +25,9 @@ import seaborn as sns
 print('done')
 ```
 
+
+
+
 ## Importing the Dataset
 To import the dataset I first installed sklearn through the terminal using pip. Then I imported the iris dataset from sklearn's datasets library.
 
@@ -31,8 +38,12 @@ print("done")
 ```
 
 
+
+
 ## Checking the dataset to make sure it is good
 To make sure the dataset I dowloaded was good I did a few checks on it. I have saved this program under cleaning.py.
+
+
 
 
 
@@ -42,6 +53,10 @@ print(df.isnull().sum(axis=0))
 ```
 
 The result showed that there were no missing values.
+
+
+
+
 
 
 
@@ -56,6 +71,10 @@ print(df[df.duplicated()]) #This tells me where the duplicate occurs.
 ```
 ![imp](ImagesForReadMe/dup.png)
 
+There is one duplicate occuring on line 142. After researching the duplicate I decided to keep the duplicate in the dataset as removing it would create an imbalance.
+
+
+
 
 
 ### Species count
@@ -67,7 +86,7 @@ sns.countplot(df['target']);
 ![imp](ImageFolder/speciescount.png)
 
 
-From here I wanted to get to know the data further. I felt a histogram was a good place to start.
+
 
 
 
@@ -80,7 +99,7 @@ Then I got a basic description of the dataset. It showed some basic statistics o
 ![imp](ImagesForReadMe/des.png)
 
 
-
+From here I wanted to get to know the data further. I felt a histogram was a good place to start.
 
 ## Histograms
 The histogram shows the distribution between each variable for a specific characteristic.
@@ -102,6 +121,9 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 ![imp](ImageFolder/SepalWidthHist.png)
 
 
+
+
+
 ### Assigning Names to targets
 
 ![imp](ImagesForReadMe/targ.png)
@@ -110,6 +132,9 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 ![imp](ImagesForReadMe/tar2.png)
 
 After setting target names I could get more in depth with the analysis.
+
+
+
 
 ## Relational Plots
 
