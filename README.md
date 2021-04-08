@@ -1,20 +1,21 @@
 # Pands-Project
- :leaves:
-The Irish Flower Data Set is a set of 150 entries of a specific flower.
 
-3 different Iris species:
-Iris Setosa
-Iris Versicolor
-Iris  
+# Fisher's Iris Dataset
+ :leaves: :herb: :bar_chart:
 
-sepal is the stem
-petal is the main portion of the flower
+Fisher's Iris Data Set was first introduced by Ronald Fisher in his 1936 report titled ["The Use of Multiple Measurements in Taxonomic Problems"](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x). It consists of 50 records for each of three Iris species: Iris setosa, Iris virginica, and Iris versicolor. Each flower has 4 measurements applied to it: sepal length, sepal width, petal length and petal width. The sepal is the outer part of the flower, it encloses the flower during bud stage and the petal is the main leaflike part of the flower, it is often the colourful part.
 
 
+![imp](ImagesForReadMe/in.png)
+*[source](https://www.oreilly.com/library/view/neural-network-programming/9781788390392/04622274-f10c-4930-a431-e5b0328c86ee.xhtml)
 
 
+In doing this project my aim was to analyse the dataset and draw some insight about the differences between the 3 species within the Iris flower family.
 
-## Importing the Libraries
+## Setting Up  
+
+
+### Importing the Libraries
 For this project I used Pandas, Numpy, Matplotlib and Seaborn. I installed all the libraries into my machines through pip before starting the project. After importing I print done just so I know that it has worked.
 
 ```
@@ -24,11 +25,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 print('done')
 ```
+  
 
 
 
-
-## Importing the Dataset
+### Importing the Dataset
 To import the dataset I first installed sklearn through the terminal using pip. Then I imported the iris dataset from sklearn's datasets library.
 
 ```
@@ -36,13 +37,13 @@ from sklearn import datasets
 data = datasets.load_iris()
 print("done")
 ```
-
+  
 
 
 
 ## Checking the dataset to make sure it is good
-To make sure the dataset I dowloaded was good I did a few checks on it. I have saved this program under cleaning.py.
-
+To make sure the dataset I dowloaded was good I did a few checks on it. I have saved this program under [cleaning.py](https://github.com/john-cashman/Pands-Project2021/blob/main/cleaning.py).
+  
 
 
 
@@ -53,7 +54,7 @@ print(df.isnull().sum(axis=0))
 ```
 
 The result showed that there were no missing values.
-
+  
 
 
 
@@ -71,8 +72,8 @@ print(df[df.duplicated()]) #This tells me where the duplicate occurs.
 ```
 ![imp](ImagesForReadMe/dup.png)
 
-There is one duplicate occuring on line 142. After researching the duplicate I decided to keep the duplicate in the dataset as removing it would create an imbalance.
-
+There is one duplicate occuring on line 142. After researching the duplicate I decided to keep the duplicate in the dataset as removing it would create an imbalance.  
+  
 
 
 
@@ -101,7 +102,7 @@ Then I got a basic description of the dataset. It showed some basic statistics o
 
 From here I wanted to get to know the data further. I felt a histogram was a good place to start.
 
-## Histograms
+### Histograms
 The histogram shows the distribution between each variable for a specific characteristic.
 
 I have saved the histograms program in the repository under [Histograms.py](https://github.com/john-cashman/Pands-Project2021/blob/main/Histograms.py). I also saved the plots as pngs and placed them into a separate folder within the repository.
@@ -119,7 +120,7 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 ![imp](ImageFolder/SepalLengthHist.png)
 ![imp](ImageFolder/PetalWidthHist.png)
 ![imp](ImageFolder/SepalWidthHist.png)
-
+  
 
 
 
@@ -131,13 +132,15 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 
 ![imp](ImagesForReadMe/tar2.png)
 
-After setting target names I could get more in depth with the analysis.
 
 
 
+## More extensive analysis 
+After setting target names I could get more in depth with the analysis.  
 
-## Relational Plots
 
+### Relational Plots
+I found the relational plots to be very informative. The program for the following plots can be found under [relplots.py](https://github.com/john-cashman/Pands-Project2021/blob/main/relplots.py)
 
 ```
 col = "sepal length (cm)" 
@@ -156,3 +159,4 @@ plt.show()
 
 This plot gave a much clearer view of the data. For example, the petal length and width of the Setosa species is far shorter than the other two species. The Setosa tends to have a wider sepal though but a much shorter sepal length.
 Versicolor and Virginica on the other hand are more difficult to tell apart as there is cross over in all attributes.
+  
