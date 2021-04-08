@@ -1,4 +1,9 @@
 # Pands-Project
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 # Fisher's Iris Dataset
  :leaves: :herb: :bar_chart:
@@ -12,8 +17,22 @@ Fisher's Iris Data Set was first introduced by Ronald Fisher in his 1936 report 
 
 In doing this project my aim was to analyse the dataset and draw some insight about the differences between the 3 species within the Iris flower family.
 
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 ## Setting Up  
 
+
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 ### Importing the Libraries
 For this project I used Pandas, Numpy, Matplotlib and Seaborn. I installed all the libraries into my machines through pip before starting the project. After importing I print done just so I know that it has worked.
@@ -28,6 +47,12 @@ print('done')
   
 
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 
 ### Importing the Dataset
 To import the dataset I first installed sklearn through the terminal using pip. Then I imported the iris dataset from sklearn's datasets library.
@@ -38,7 +63,11 @@ data = datasets.load_iris()
 print("done")
 ```
   
+&nbsp;
 
+&nbsp;
+
+&nbsp;
 
 
 ## Checking the dataset to make sure it is good
@@ -46,6 +75,11 @@ To make sure the dataset I dowloaded was good I did a few checks on it. I have s
   
 
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 
 ### Missing Values
@@ -58,7 +92,11 @@ The result showed that there were no missing values.
 
 
 
+&nbsp;
 
+&nbsp;
+
+&nbsp;
 
 
 ### Duplicates
@@ -75,7 +113,11 @@ print(df[df.duplicated()]) #This tells me where the duplicate occurs.
 There is one duplicate occuring on line 142. After researching the duplicate I decided to keep the duplicate in the dataset as removing it would create an imbalance.  
   
 
+&nbsp;
 
+&nbsp;
+
+&nbsp;
 
 
 ### Species count
@@ -89,7 +131,11 @@ sns.countplot(df['target']);
 
 
 
+&nbsp;
 
+&nbsp;
+
+&nbsp;
 
 ## Getting Familiar With The Data
 After loading the data is set the dataframe to df.
@@ -101,6 +147,8 @@ Then I got a basic description of the dataset. It showed some basic statistics o
 
 
 From here I wanted to get to know the data further. I felt a histogram was a good place to start.
+
+&nbsp;
 
 ### Histograms
 The histogram shows the distribution between each variable for a specific characteristic.
@@ -134,7 +182,11 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 ![imp](ImageFolder/SepalWidthHist.png)
   
 
+&nbsp;
 
+&nbsp;
+
+&nbsp;
 
 
 ### Assigning Names to targets
@@ -145,11 +197,20 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 ![imp](ImagesForReadMe/tar2.png)
 
 
+&nbsp;
 
+&nbsp;
+
+&nbsp;
 
 ## More extensive analysis 
 After setting target names I could get more in depth with the analysis.  
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 ### Relational Plots
 I found the relational plots to be very informative. The program for the following plots can be found under [relplots.py](https://github.com/john-cashman/Pands-Project2021/blob/main/relplots.py)
@@ -161,13 +222,34 @@ plt.title(col)
 plt.savefig('ImageFolder/relplotsepallengthplt.png')
 plt.show()
 ```
-![imp](ImageFolder/relplotsepallength.png)
+![imp](ImageFolder/relplotsepallengthplt.png)
+&nbsp;
 
-![imp](ImageFolder/relplotsepalwidth.png)
+&nbsp;
 
-![imp](ImageFolder/relplotpetallength.png)
+&nbsp;
 
-![imp](ImageFolder/relplotpetalwidth.png)
+![imp](ImageFolder/relplotsepalwidthplt.png)
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+![imp](ImageFolder/relplotpetallengthplt.png)
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+![imp](ImageFolder/relplotpetalwidthplt.png)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 This plot gave a much clearer view of the data. For example, the petal length and width of the Setosa species is far shorter than the other two species. The Setosa tends to have a wider sepal though but a much shorter sepal length.
 Versicolor and Virginica on the other hand are more difficult to tell apart as there is cross over in all attributes.
