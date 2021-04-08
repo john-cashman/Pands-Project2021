@@ -31,6 +31,46 @@ print("done")
 ```
 
 
+## Checking the dataset to make sure it is good
+To make sure the dataset I dowloaded was good I did a few checks on it. I have saved this program under cleaning.py.
+
+
+
+### Missing Values
+```
+print(df.isnull().sum(axis=0))
+```
+
+The result showed that there were no missing values.
+
+
+
+### Duplicates
+Checking the dataset for duplicates.
+
+```
+print(df.duplicated().sum()) #This tells the number of duplicates.
+
+print(df[df.duplicated()]) #This tells me where the duplicate occurs.
+
+```
+![imp](ImagesForReadMe/dup.png)
+
+
+
+### Species count
+```
+plt.title('species count')
+sns.countplot(df['target']);
+```
+
+![imp](ImageFolder/speciescount.png)
+
+
+From here I wanted to get to know the data further. I felt a histogram was a good place to start.
+
+
+
 ## Getting Familiar With The Data
 After loading the data is set the dataframe to df.
 ``` df = pd.DataFrame(data["data"], columns=data["feature_names"]) ```
@@ -40,7 +80,7 @@ Then I got a basic description of the dataset. It showed some basic statistics o
 ![imp](ImagesForReadMe/des.png)
 
 
-From here I wanted to get to know the data further. I felt a histogram was a good place to start.
+
 
 ## Histograms
 The histogram shows the distribution between each variable for a specific characteristic.
@@ -62,7 +102,7 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 ![imp](ImageFolder/SepalWidthHist.png)
 
 
-# Assigning Names to targets
+### Assigning Names to targets
 
 ![imp](ImagesForReadMe/targ.png)
 
@@ -71,3 +111,13 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 
 After setting target names I could get more in depth with the analysis.
 
+## Relational Plots
+
+
+```
+col = "sepal length (cm)"
+sns.relplot(x=col, y ="target", hue="target_name", data=df)
+plt.title(col)
+plt.savefig('ImageFolder/relplotsepallengthplt.png')
+plt.show()
+```
