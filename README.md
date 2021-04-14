@@ -1,10 +1,6 @@
 # Pands-Project
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
 # Fisher's Iris Dataset
  :leaves: :herb: :bar_chart:
 
@@ -17,20 +13,12 @@ Fisher's Iris Data Set was first introduced by Ronald Fisher in his 1936 report 
 
 In doing this project my aim was to analyse the dataset and draw some insight about the differences between the 3 species within the Iris flower family.
 
-
 &nbsp;
 
-&nbsp;
-
-&nbsp;
 
 ## Setting Up  
 
 
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
@@ -45,14 +33,7 @@ import seaborn as sns
 print('done')
 ```
   
-
-
 &nbsp;
-
-&nbsp;
-
-&nbsp;
-
 
 ### Importing the Dataset
 To import the dataset I first installed sklearn through the terminal using pip. Then I imported the iris dataset from sklearn's datasets library.
@@ -65,22 +46,10 @@ print("done")
   
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
 ## Checking the dataset to make sure it is good
 To make sure the dataset I dowloaded was good I did a few checks on it. I have saved this program under [cleaning.py](https://github.com/john-cashman/Pands-Project2021/blob/main/cleaning.py).
   
-
-
 &nbsp;
-
-&nbsp;
-
-&nbsp;
-
 
 ### Missing Values
 ```
@@ -89,15 +58,7 @@ print(df.isnull().sum(axis=0))
 
 The result showed that there were no missing values.
   
-
-
-
 &nbsp;
-
-&nbsp;
-
-&nbsp;
-
 
 ### Duplicates
 Checking the dataset for duplicates.
@@ -115,11 +76,6 @@ There is one duplicate occuring on line 142. After researching the duplicate I d
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
 ### Species count
 ```
 plt.title('species count')
@@ -129,13 +85,8 @@ sns.countplot(df['target']);
 ![imp](ImageFolder/speciescount.png)
 
 
-
-
 &nbsp;
 
-&nbsp;
-
-&nbsp;
 
 ## Getting Familiar With The Data
 After loading the data is set the dataframe to df.
@@ -186,8 +137,6 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 
 &nbsp;
 
-&nbsp;
-
 
 ### Assigning Names to targets
 
@@ -201,14 +150,8 @@ plt.savefig('ImageFolder/SepalLengthHist.png')
 
 &nbsp;
 
-&nbsp;
-
 ## More extensive analysis 
 After setting target names I could get more in depth with the analysis.  
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
@@ -227,11 +170,7 @@ plt.show()
 
 &nbsp;
 
-&nbsp;
-
 ![imp](ImageFolder/relplotsepalwidthplt.png)
-&nbsp;
-
 &nbsp;
 
 &nbsp;
@@ -241,11 +180,7 @@ plt.show()
 
 &nbsp;
 
-&nbsp;
-
 ![imp](ImageFolder/relplotpetalwidthplt.png)
-
-&nbsp;
 
 &nbsp;
 
