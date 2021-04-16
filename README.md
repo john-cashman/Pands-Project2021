@@ -72,9 +72,21 @@ print(df[df.duplicated()]) #This tells me where the duplicate occurs.
 ![imp](ImagesForReadMe/dup.png)
 
 There is one duplicate occuring on line 142. After researching the duplicate I decided to keep the duplicate in the dataset as removing it would create an imbalance.  
+
   
 
+
 &nbsp;
+
+Dataset shape:
+[imp](ImageFolder/shape.png)
+
+The dataset has 150 data-points and 4 features. It also has a class label for the species on the horizontal line. The 4 features are:
+
+![imp](ImageFolder/featnames.png)
+
+
+
 
 ### Species count
 ```
@@ -84,6 +96,8 @@ sns.countplot(df['target']);
 
 ![imp](ImageFolder/speciescount.png)
 
+
+The dataset is well balanced with 50 of each species. At this stage I hadn't applied the names to the species but 0 is the Setosa, 1 is versicolor and 2 is virginica. Later on I matches these species to their numbers.
 
 &nbsp;
 
