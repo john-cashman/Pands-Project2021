@@ -1,3 +1,4 @@
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -17,6 +18,5 @@ df["target"] = data["target"]
 df["target_name"] = df["target"].map({0: "setosa", 1: "versicolor", 2: "virginica"})
 
 
-plt.title('Comparison between sepal width and length')
-sns.scatterplot(df['sepal length (cm)'], df['sepal width (cm)']);
+sns.lmplot(x = 'sepal length (cm)', y = 'sepal width (cm)', data = df, hue = 'target_name', col = 'target')
 plt.show()

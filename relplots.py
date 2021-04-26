@@ -37,5 +37,5 @@ plt.savefig('ImageFolder/relplotpetallengthplt.png')
 col = "petal width (cm)"
 sns.relplot(x=col, y ="target", hue="target_name", data=df)
 plt.title(col)
-plt.savefig('ImageFolder/relplotpetalwidthplt.png')
-#plt.show()
+# plt.savefig('ImageFolder/relplotpetalwidthplt.png')
+plt.show()

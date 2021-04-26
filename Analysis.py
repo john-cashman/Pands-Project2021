@@ -148,3 +148,32 @@ plt.savefig("snsoverview.png")
 plt.show()
 
 
+# Box Plot
+sns.boxplot(data=df, orient="h", palette="Set2")
+plt.savefig('ImageFolder/violinplot.png')
+plt.show()
+
+
+# Violin Plot for each variable
+sns.violinplot(x= "target", y = "sepal length (cm)", data = df, hue= "target_name")
+plt.title("Violinplot for Sepal Length by Species")
+plt.savefig('ImageFolder/violinplotforsepallength.png')
+plt.show()
+
+sns.violinplot(x= "target", y = "sepal width (cm)", data=df, hue= "target_name")
+plt.title("Violinplot for Sepal Width by Species")
+plt.savefig('ImageFolder/violinplotforsepalwidth.png')
+plt.show()
+
+
+sns.violinplot(x= "target", y = "petal length (cm)", data=df, hue= "target_name")
+plt.title("Violinplot for Petal Length by Species")
+plt.savefig('ImageFolder/violinplotforpetallength.png')
+plt.show()
+
+
+sns.violinplot(x= "target", y = "petal width (cm)", data=df, hue= "target_name")
+plt.title("Violinplot for Petal Width by Species")
+plt.savefig('ImageFolder/violinplotforpetalwidth.png')
+plt.show()
+

@@ -17,7 +17,9 @@ df["target"] = data["target"]
 df["target_name"] = df["target"].map({0: "setosa", 1: "versicolor", 2: "virginica"})
 
 
-sns.pairplot(df, hue = "target_name")
-plt.savefig("snsoverview.png")
-plt.savefig('ImageFolder/pairplot.png')
+sns.boxplot(data=df, orient="h", palette="Set2")
+plt.savefig('ImageFolder/boxplot.png')
 plt.show()
+
+
+
