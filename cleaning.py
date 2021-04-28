@@ -12,7 +12,7 @@ df = pd.DataFrame(data["data"])
 df["target"] = data["target"]
 
 
-'''
+
 #making sure there isn't any missing values.
 print(df.isnull().sum(axis=0))
 '''
@@ -22,7 +22,7 @@ print(df.duplicated().sum()) #This tells the number of duplicates.
 
 print(df[df.duplicated()]) #This tells me where the duplicate occurs.
 
-#Print Target Count
+# Print Target Count
 print(df['target'].value_counts())
 
 
@@ -31,7 +31,7 @@ plt.title('species count')
 sns.countplot(df['target']);
 plt.savefig('ImageFolder/speciescount.png')
 plt.show()
-
+'''
 
 
 

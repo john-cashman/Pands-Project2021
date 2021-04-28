@@ -27,5 +27,5 @@ plt.show()
 
 # Lmplot for petal length and petal width.
 sns.lmplot(x = 'petal length (cm)', y = 'petal width (cm)', data = df, hue = 'target_name', col = 'target')
-plt.savefig('ImageFolder/lmppltsepal.png')
+plt.savefig('ImageFolder/lmpltpetal.png')
 plt.show()
