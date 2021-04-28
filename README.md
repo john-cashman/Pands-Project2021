@@ -1,5 +1,6 @@
 # Pands 2021 Project 
 Student Name: John Cashman
+&nbsp;
 Student Id: G0039261
 
 &nbsp;
@@ -12,6 +13,7 @@ Student Id: G0039261
 3. [Checking the dataset](#Checking)
 4. [Getting Familiar](#Familiar)
 5. [More extensive analysis](#analysis)
+6. [Conclusion](#conclusion)
 
 
 
@@ -67,6 +69,7 @@ print(df.isnull().sum(axis=0))
 ```
 
 The result showed that there were no missing values.
+&nbsp;
 ![imp](ImagesForReadMe/missingval.png)
 
 
@@ -87,12 +90,11 @@ There is one duplicate occuring on line 142. After researching the duplicate I d
 
 &nbsp;
 #### Dataset shape:
-[imp](ImagesForReadMe/shape.png)
+![imp](ImagesForReadMe/shape.png)
 
 The dataset has 150 data-points and 4 features. It also has a class label for the species on the horizontal line. The 4 features are:
 
 ![imp](ImagesForReadMe/featnames.png)
-
 
 &nbsp;
 #### Species count
@@ -196,6 +198,8 @@ plt.title(col)
 plt.savefig('ImageFolder/relplotsepallengthplt.png')
 plt.show()
 ```
+
+&nbsp;
 ![imp](ImageFolder/relplotsepallengthplt.png)
 &nbsp;
 
@@ -219,6 +223,7 @@ Versicolor and Virginica on the other hand are more difficult to tell apart as t
 
 &nbsp;
 #### Pair Plots
+The program for the following plots can be found under [pairplots.py](https://github.com/john-cashman/Pands-Project2021/blob/main/pairplots.py).
 ![imp](ImageFolder/pairplot.png)
 
 
@@ -229,6 +234,7 @@ Versicolor and Virginica on the other hand are more difficult to tell apart as t
 
 &nbsp;
 #### Box Plot
+The program for the following plots can be found under [boxplots.py](https://github.com/john-cashman/Pands-Project2021/blob/main/boxplots.py).
 ![imp](ImageFolder/boxplot.png)
 
 
@@ -236,6 +242,8 @@ Versicolor and Virginica on the other hand are more difficult to tell apart as t
 
 &nbsp;
 #### Violin Plot
+The program for the following plots can be found under [violin.py](https://github.com/john-cashman/Pands-Project2021/blob/main/violin.py).
+
 ![imp](ImageFolder/violinplotforpetallength.png)
 
 &nbsp;
@@ -252,10 +260,18 @@ Versicolor and Virginica on the other hand are more difficult to tell apart as t
 
 &nbsp;
 #### lm Plot
-![imp](ImageFolder/lmpltsepal.png')
+The program for the following plots can be found under [lmplot.py](https://github.com/john-cashman/Pands-Project2021/blob/main/lmplot.py).
+
+
+![imp](ImageFolder/lmpltsepal.png)
 
 &nbsp;
-![imp](ImageFolder/lmpltpetal.png')
+![imp](ImageFolder/lmpltpetal.png)
+
+
+
+
+## Conclusion <a name="conclusion"></a>
 
 
 
