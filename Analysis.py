@@ -1,8 +1,10 @@
 
 
 '''
-Exploring the Iris Dataset:
-Importing the libraries and loading the dataset.
+Pands 2021
+An analysis of the Iris Data Set.
+Author: John Cashman
+Student id: G0039261
 '''
 
 
@@ -16,21 +18,24 @@ import seaborn as sns
 
 
 
-# I'm loading the dataset directly from sklearn. I installed sklearn onto my machine already and found doing it this way easier than downloading the dataset as a csv file.
-from sklearn import datasets
+# I'm loading the dataset directly from sklearn. 
 data = datasets.load_iris()
-print("done")
+# print("done")
 
 
-# Getting a bried introduction to the dataset:
-# Tells a little bit about the dataset.
-print(data["DESCR"])
+
+# Getting a brief introduction to the dataset:
+
+
+
+# Desc Tells a little bit about the dataset.
+(data["DESCR"])
 
 
 #Check for Duplicates.
-print(df.duplicated().sum()) #This tells the number of duplicates.
+(df.duplicated().sum()) #This tells the number of duplicates.
 
-print(df[df.duplicated()]) #This tells me where the duplicate occurs.
+(df[df.duplicated()]) #This tells me where the duplicate occurs.
 
 
 # The dataset is built on comparing 3 different species of iris flower based on 4 distinct features. The names of the 4 features are: sepal length, sepal width, petal length and petal width.import
@@ -54,9 +59,14 @@ plt.title('species count')
 sns.countplot(df['target']);
 plt.savefig('ImageFolder/Speciescount.png')   
 
-
-# The below 'describe' command gives an easy to read overview of the whole dataset. Below is a basic description of the data. It shows some basic statistics of the 4 features. Although it is a basic description it still gives some interesting information. For example that there is a big difference between the smallest petal length and the largest. There isn't as large a range in petal width.
+'''
+The below 'describe' command gives an easy to read overview of the whole dataset. 
+Below is a basic description of the data. It shows some basic statistics of the 4 features. 
+Although it is a basic description it still gives some interesting information. 
+For example that there is a big difference between the smallest petal length and the largest. There isn't as large a range in petal width.
+'''
 df.describe()
+
 
 # Get the target names
 data["target_names"]
@@ -68,6 +78,7 @@ df["target_name"] = df["target"].map({0: "setosa", 1: "versicolor", 2: "virginic
 
 
 #  Scatter Plots:
+# Scatter plot for sepal length and sepal width
 sns.set_style("whitegrid"); 
 sns.FacetGrid(data, hue="target", size=8)\
     .map(plt.scatter, "sepal length (cm)", "sepal width (cm)")\
@@ -75,6 +86,7 @@ sns.FacetGrid(data, hue="target", size=8)\
 plt.show();
 
 
+# Scatter plot for petal length and petal width
 sns.set_style("whitegrid");
 sns.FacetGrid(df, hue="target", size=8)\
     .map(plt.scatter, "petal length (cm)", "petal width (cm)")\
@@ -87,26 +99,26 @@ plt.show();
 col = "sepal length (cm)"
 df[col].hist()
 plt.suptitle(col)
-plt.savefig('sepallengthhist.png')
+plt.savefig('ImageFolder/sepallengthhist.png')
 plt.show()
 
 col = "sepal width (cm)"
 df[col].hist()
 plt.suptitle(col)
-plt.savefig('sepalwidththhist.png')
+plt.savefig('ImageFolder/sepalwidththhist.png')
 plt.show()
 
 
 col = "petal length (cm)"
 df[col].hist()
 plt.suptitle(col)
-plt.savefig('petallengthhist.png')
+plt.savefig('ImageFolder/petallengthhist.png')
 plt.show()
 
 col = "petal width (cm)"
 df[col].hist()
 plt.suptitle(col)
-plt.savefig('petalwidthhist.png')
+plt.savefig('ImageFolder/petalwidthhist.png')
 plt.show()
 
 
@@ -115,7 +127,7 @@ plt.show()
 col = "sepal length (cm)"
 sns.relplot(x=col, y ="target", hue="target_name", data=df)
 plt.title(col)
-plt.savefig('sepallengthplt.png')
+plt.savefig('ImageFolder/sepallengthrelplt.png')
 plt.show()
 
 
@@ -123,7 +135,7 @@ plt.show()
 col = "sepal width (cm)"
 sns.relplot(x=col, y ="target", hue="target_name", data=df)
 plt.title(col)
-plt.savefig('sepalwidthplt.png')
+plt.savefig('ImageFolder/sepalwidthrelplt.png')
 plt.show()
 
 
@@ -131,7 +143,7 @@ plt.show()
 col = "petal length (cm)"
 sns.relplot(x=col, y ="target", hue="target_name", data=df)
 plt.title(col)
-plt.savefig('petallengthplt.png')
+plt.savefig('ImageFolder/petallengthrelplt.png')
 plt.show()
 
 
@@ -139,18 +151,18 @@ plt.show()
 col = "petal width (cm)"
 sns.relplot(x=col, y ="target", hue="target_name", data=df)
 plt.title(col)
-plt.savefig('petalwidthplt.png')
+plt.savefig('ImageFolder/petalwidthrelplt.png')
 plt.show()
 
 # Pair Plots
 sns.pairplot(df, hue = "target_name")
-plt.savefig("snsoverview.png")
+plt.savefig("ImageFolder/snsoverview.png")
 plt.show()
 
 
 # Box Plot
 sns.boxplot(data=df, orient="h", palette="Set2")
-plt.savefig('ImageFolder/violinplot.png')
+plt.savefig('ImageFolder/boxplot.png')
 plt.show()
 
 
@@ -190,3 +202,5 @@ plt.show()
 sns.lmplot(x = 'petal length (cm)', y = 'petal width (cm)', data = df, hue = 'target_name', col = 'target')
 plt.savefig('ImageFolder/lmppltsepal.png')
 plt.show()
+
+
