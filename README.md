@@ -14,6 +14,7 @@ Student Id: G0039261
 4. [Getting Familiar](#Familiar)
 5. [More extensive analysis](#analysis)
 6. [Conclusion](#conclusion)
+7. [References](#references)
 
 
 
@@ -69,6 +70,8 @@ print(df.isnull().sum(axis=0))
 ```
 
 The result showed that there were no missing values.
+
+
 &nbsp;
 ![imp](ImagesForReadMe/missingval.png)
 
@@ -263,7 +266,7 @@ The program for the following plots can be found under [violin.py](https://githu
 The program for the following plots can be found under [lmplot.py](https://github.com/john-cashman/Pands-Project2021/blob/main/lmplot.py).
 
 
-![imp](ImageFolder/lmpltsepal.png)
+![imp](ImageFolder/lmppltsepal.png)
 
 &nbsp;
 ![imp](ImageFolder/lmpltpetal.png)
@@ -272,6 +275,10 @@ The program for the following plots can be found under [lmplot.py](https://githu
 
 
 ## Conclusion <a name="conclusion"></a>
+
+
+
+## References <a name="references"></a>
 
 
 
