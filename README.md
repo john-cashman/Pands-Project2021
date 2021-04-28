@@ -219,7 +219,7 @@ Versicolor and Virginica on the other hand are more difficult to tell apart as t
 
 &nbsp;
 #### Pair Plots
-[imp](ImageFolder/pairplot.png)
+![imp](ImageFolder/pairplot.png)
 
 
 
@@ -229,33 +229,33 @@ Versicolor and Virginica on the other hand are more difficult to tell apart as t
 
 &nbsp;
 #### Box Plot
-[imp](ImageFolder/boxplot.png)
+![imp](ImageFolder/boxplot.png)
 
 
 
 
 &nbsp;
 #### Violin Plot
-[imp](ImageFolder/violinplotforpetallength.png)
+![imp](ImageFolder/violinplotforpetallength.png)
 
 &nbsp;
-[imp](ImageFolder/violinplotforpetalwidth.png)
+![imp](ImageFolder/violinplotforpetalwidth.png)
 
 &nbsp;
-[imp](ImageFolder/violinplotforsepallength.png)
+![imp](ImageFolder/violinplotforsepallength.png)
 
 &nbsp;
-[imp](ImageFolder/violinplotforsepalwidth.png)
+![imp](ImageFolder/violinplotforsepalwidth.png)
 
 
 
 
 &nbsp;
 #### lm Plot
-[imp](ImageFolder/lmpltsepal.png')
+![imp](ImageFolder/lmpltsepal.png')
 
 &nbsp;
-[imp](ImageFolder/lmpltpetal.png')
+![imp](ImageFolder/lmpltpetal.png')
 
 
 
