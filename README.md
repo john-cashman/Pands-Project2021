@@ -17,7 +17,7 @@ Student Id: G0039261
 
 
 
-## Introduction <a name="Introduction"></a>
+## Introduction <a name="introduction"></a>
 
 Fisher's Iris Data Set was first introduced by Ronald Fisher in his 1936 report titled ["The Use of Multiple Measurements in Taxonomic Problems"](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x). It consists of 50 records for each of three Iris species: Iris setosa, Iris virginica, and Iris versicolor. Each flower has 4 measurements applied to it: sepal length, sepal width, petal length and petal width. The sepal is the outer part of the flower, it encloses the flower during bud stage and the petal is the main leaflike part of the flower, it is often the colourful part.
 In doing this project my aim was to analyse the dataset and draw some insight about the differences between the 3 species within the Iris flower family.
