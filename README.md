@@ -8,6 +8,9 @@ Student Id: G0039261
 
 ### Table of contents
 1. [Introduction](#Introduction)
+2. [Set Up](#Setup)
+3. [Checking the dataset](#Checking)
+4. [Getting Familiar](#Familiar)
 
 
 
@@ -28,11 +31,11 @@ In doing this project my aim was to analyse the dataset and draw some insight ab
 
 &nbsp;
 
-## Setting Up  
+## Set Up  <a name="Setup"></a>
 
 &nbsp;
 
-### Importing the Libraries
+#### Importing the Libraries
 For this project I used Pandas, Numpy, Matplotlib and Seaborn. I installed all the libraries into my machines through pip before starting the project. After importing I print done just so I know that it has worked.
 
 ```
@@ -45,7 +48,7 @@ print('done')
   
 &nbsp;
 
-### Importing the Dataset
+#### Importing the Dataset
 To import the dataset I first installed sklearn through the terminal using pip. Then I imported the iris dataset from sklearn's datasets library.
 
 ```
@@ -56,12 +59,12 @@ print("done")
   
 &nbsp;
 
-## Checking the dataset to make sure it is good
-To make sure the dataset I dowloaded was good I did a few checks on it. I have saved this program under [cleaning.py](https://github.com/john-cashman/Pands-Project2021/blob/main/cleaning.py).
+## Checking the dataset to make sure it is good <a name="Checking"></a>
+To make sure the dataset I dowloaded was good I did a few checks on it. I have saved this program under [cleaning.py](https://github.com/john-cashman/Pands-Project2021/blob/main/cleaning.py). I checked the dataset for any misssing values, duplicates and the species count. Before downloading the dataset I knew there should be no missing values and the species count is 50 of each.
   
 &nbsp;
 
-### Missing Values
+#### Missing Values
 ```
 print(df.isnull().sum(axis=0))
 ```
@@ -70,7 +73,7 @@ The result showed that there were no missing values.
   
 &nbsp;
 
-### Duplicates
+#### Duplicates
 Checking the dataset for duplicates.
 
 ```
@@ -112,7 +115,7 @@ The dataset is well balanced with 50 of each species. At this stage I hadn't app
 &nbsp;
 
 
-## Getting Familiar With The Data
+## Getting Familiar With The Data <a name="Familiar"></a>
 After loading the data is set the dataframe to df.
 ``` df = pd.DataFrame(data["data"], columns=data["feature_names"]) ```
 
