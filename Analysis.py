@@ -159,6 +159,11 @@ sns.pairplot(df, hue = "target_name")
 plt.savefig("ImageFolder/snsoverview.png")
 plt.show()
 
+# Scatter Plot for petal length and petal width
+sns.scatterplot(x=df["petal length (cm)"], y=df["petal width (cm)"], hue=df["target"])
+plt.title("Petal length and Petal Width by Species")
+plt.savefig('ImageFolder/scatterplot.png')
+plt.show()
 
 # Box Plot
 sns.boxplot(data=df, orient="h", palette="Set2")

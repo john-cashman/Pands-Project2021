@@ -1,5 +1,6 @@
 # Pands 2021 Project 
 Student Name: John Cashman
+
 &nbsp;
 Student Id: G0039261
 
@@ -227,11 +228,15 @@ Versicolor and Virginica on the other hand are more difficult to tell apart as t
 &nbsp;
 #### Pair Plots
 The program for the following plots can be found under [pairplots.py](https://github.com/john-cashman/Pands-Project2021/blob/main/pairplots.py).
-![imp](ImageFolder/pairplot.png)
+![imp](ImageFolder/pairplot.png). 
 
+&nbsp;
+The pair plots give an overview of many different plots. It is interesting in terms of data visualisation  to look over the pair plots and look for any outliers. In many ways the information relayed what I already knew from the relational plots. However, I found that the scatter plot for petal width on the y axis and petal length on the x axis gave the best chance of differentiating the virginica from the versicolor. Having seen it previewed on the pair plot I decided to get a larger image of it.
 
+&nbsp;
+![imp](ImageFolder/scatterplot.png). 
 
-
+From this scatter plot we can see that the characteristics of the petal are the best indicators for each species. The setosa's petal is much smaller than the others. The versicolor ranges in the middle with the majority of samples not crossing over with the virginica which has the largest petals.
 
 
 
@@ -245,7 +250,7 @@ The program for the following plots can be found under [boxplots.py](https://git
 
 &nbsp;
 #### Violin Plot
-The program for the following plots can be found under [violin.py](https://github.com/john-cashman/Pands-Project2021/blob/main/violin.py).
+The program for the following plots can be found under [violin.py](https://github.com/john-cashman/Pands-Project2021/blob/main/violin.py). I found that the violin plot isn't as informative as the scatter plot and the relational plot. Nevertheless, it did back up the findings in the previous sections. 
 
 ![imp](ImageFolder/violinplotforpetallength.png)
 
@@ -275,16 +280,61 @@ The program for the following plots can be found under [lmplot.py](https://githu
 
 
 ## Conclusion <a name="conclusion"></a>
+The Iris dataset is the 'hello world' of datasets for studying data analytics. There are some great insights I found through exploring the dataset. From the initial description of the dataset that I took from the 'df.describe' code I could see that sepal width has the lowest range and petal width ranges the most.
+  
+
+Having analysed the dataset it was interesting to see how it was quite easy to differentiate the setosa species from the versicolor and the virginica. For example, the petals of the setosa are much shorter than the other two species. I first got an indication of this in the histograms but truly saw it in the relational plots. There is also less variance in the petals of the setosa. I also saw this in the relational plots. In the violin plot I saw that setosa has the shortest range for all characteristics apart from sepal width where it has the largest range.
+
+ It was more difficult to differentiate the other two species. The virginica could potentially be identified through the characteristics of their petals as they tend to have the largest petals in terms of length and width. There are ways that we could differentiate the virginica and versicolor with 100% certainty. This could be done through machine learning but this is beyond the scope of this project. 
 
 
 
 ## References <a name="references"></a>
 
 
+Pandas.pydata.org. 2021. 10 minutes to pandas — pandas 1.2.4 documentation. [online] Available at: <https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html>
 
+&nbsp;
+Applied AI, 2017. Iris Dataset EDA Lecture1@ Applied AI Course. [video] Available at: <https://www.youtube.com/watch?v=FLuqwQgSBDw> 
 
+&nbsp;
+Docs.github.com. n.d. Basic writing and formatting syntax - GitHub Docs. [online] Available at: <https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax>
 
+&nbsp;
+Seaborn.pydata.org. n.d. Building structured multi-plot grids — seaborn 0.11.1 documentation. [online] Available at: <https://seaborn.pydata.org/tutorial/axis_grids.html>
 
+&nbsp;
+Data Professor, 2020. Exploratory Data Analysis in Python using pandas. [video] Available at: <https://www.youtube.com/watch?v=9m4n2xVzk9o>
+
+&nbsp;
+Jetely, Aditya, n.d. EDA of the Iris Dataset. [online] Medium. Available at: <https://towardsdatascience.com/eda-of-the-iris-dataset-190f6dfd946d> 
+
+&nbsp;
+Krishnamurthy, Dhruva, 2021. An EDA Walkthrough — The Iris Dataset. [online] Medium. Available at: <https://towardsdatascience.com/an-eda-walkthrough-the-iris-dataset-3f79246266c1>
+
+&nbsp;
+Nimare, A., 2016. A Beginners Guide to writing a Kickass README ✍. [online] Medium. Available at: <https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3> 
+
+&nbsp;
+Project Data Science, 2020. Intro to Machine Learning with Python 1: Welcome and Project Setup. [image] Available at: <https://www.youtube.com/watch?v=rdaG53khzv0&list=PLMAyPTgGwv2DUV6DZib9eMetsTTX87JNr> 
+
+&nbsp;
+Project Data Science, 2020. Intro to Machine Learning with Python 2: Exploratory Data Analysis. [video] Available at: <https://www.youtube.com/watch?v=6BagRiSY1ds&list=PLMAyPTgGwv2DUV6DZib9eMetsTTX87JNr&index=2>
+
+&nbsp;
+Project Data Science, 2020. Intro to Machine Learning with Python 3: Train Test Split and Baseline Modeling. [video] Available at: <https://www.youtube.com/watch?v=MufPx3L7nXM&list=PLMAyPTgGwv2DUV6DZib9eMetsTTX87JNr&index=3> 
+
+&nbsp;
+Python, R., 2021. Jupyter Notebook: An Introduction – Real Python. [online] Realpython.com. Available at: <https://realpython.com/jupyter-notebook-introduction/>
+
+&nbsp;
+Python, R., n.d. Using Pandas and Python to Explore Your Dataset – Real Python. [online] Realpython.com. Available at: <https://realpython.com/pandas-python-explore-dataset/> 
+
+&nbsp;
+Seaborn.pydata.org. n.d. seaborn.boxplot — seaborn 0.11.1 documentation. [online] Available at: <https://seaborn.pydata.org/generated/seaborn.boxplot.html>
+
+&nbsp;
+Seaborn.pydata.org. n.d. seaborn.violinplot — seaborn 0.11.1 documentation. [online] Available at: <https://seaborn.pydata.org/generated/seaborn.violinplot.html> 
 
 
 
